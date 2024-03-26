@@ -1,0 +1,50 @@
+* {
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: gainsboro;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    padding: 150px;
+}
+
+form h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+form input, button {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+.container input, button {
+    height: 30px;
+    padding: 8px;
+    vertical-align: middle;
+}
+
+.container button {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.container ol li {
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+.concluido {
+    text-decoration: line-through;
+}
+
+ol li:hover {
+    cursor: pointer;
+}
