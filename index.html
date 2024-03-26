@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <form>
+        <h1>Cadastro</h1>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome">
+
+                <label for="sobreNome"><strong>Sobrenome:</strong></label>
+                <input type="text" name="sobreNome" id="sobreNome">
+            </div>
+            <div class="campo">
+                <label for="telefone"><strong>Tel:</strong></label>
+                <input type="tel" id="telefone" name='telefone'>
+                <label for="cpf"><strong>CPF:</strong></label>
+                <input type="text" id="cpf" name="cpf" >
+            </div>
+        </fieldset>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="email"><strong>E-mail:</strong></label>
+                <input type="email" id="email" name="email">
+            </div>
+        </fieldset>
+        <fieldset class="grupo">
+            <p>Endereço completo:</p><br>
+            <div class="campo">
+                <label for="nomeRua"><strong>Rua:</strong></label>
+                <input type="text" id="nomeRua" name="nomeRua">
+                <label for="numeroRua"><strong>Nº:</strong></label>
+                <input type="number" id="numeroRua" name="numeroRua">
+                <label for="cep"><strong>CEP:</strong></label>
+                <input type="text" id="cep" name="cep">
+            </div>
+        </fieldset>
+        <button type="submit" id="buttonCadastrar" name="buttonCadastrar">Cadastrar</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./jquery.mask.min.js"></script>
+    <script src="jquery.validate.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

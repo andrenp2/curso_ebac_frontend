@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    padding: 30px;
+    background-color: lightblue;
+    width: 500px;
+    vertical-align: center;
+}
+
+form h1 {
+    font-family: sans-serif;
+    margin: 10px 35%;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+fieldset {
+    border: 0;
+    width: 100%;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: sans-serif;
+    color: #59329d;
+    margin-left: 36%;
+    margin-top: 10%;
+    justify-content: center;
+}
+
+input, button {
+    border-radius: 3px;
+}
+
+.campo {
+    margin-bottom: 2.5em;
+    width: 100%;
+    display: flex;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    display: block;
+    margin-top: 6px;
+    
+}
+
+fieldset.grupo .campo {
+    float: left;
+}
+
+.campo input {
+    padding: 0.2em;
+    margin: 5px;
+
+}
+
+.campo #numeroRua {
+    width: 50px;
+}
+
+.campo #cep {
+    width: 135px;
+}
+
+.campo #nome, #sobreNome, #cpf {
+    width: 160px;
+}
+
+.campo #email {
+    width: 425px;
+}
+
+button {
+    background-color: blue;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 255, 0.522);
+}
+
+.campo #telefone {
+    margin-left: 28px;
+    margin-right: 40px;
+}
+
+.campo #cpf{
+    margin-left: 22px;
+}
+
+
