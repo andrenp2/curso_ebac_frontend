@@ -1,0 +1,54 @@
+//--------------------------------------------------------------------------------------------------------------
+// Aula 02 
+
+// * {
+//     box-sizing: border-box;
+//     margin: 0;
+//     padding: 0;
+//     font-family: sans-serif;
+// }
+
+@use 'config/reset';
+@use 'config/cores';
+@use 'secoes/produtos';
+
+body {
+    background-color: cores.$corDeFundo;
+}
+
+
+
+
+
+
+//--------------------------------------------------------------------------------------------------------------
+//Aula 01
+
+// $corPrincipal: #eee;
+// $corSecundaria: #111;
+
+// body {
+//     background-color: $corPrincipal;
+// }
+
+// header {
+//     background-color: $corPrincipal;
+
+//     h1 {
+//         color: $corSecundaria;
+//     }
+// }
+
+// button {
+//     padding: 16px;
+//     background-color: $corSecundaria;
+//     color: $corPrincipal;
+
+//     &:hover{
+//         background-color: yellow;
+//     }
+
+//     &.sucesso {
+//         background-color: green;
+//     }
+// }
