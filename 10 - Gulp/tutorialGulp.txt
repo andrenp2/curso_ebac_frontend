@@ -1,0 +1,18 @@
+Passos para rodar o gulp em um projeto
+
+abrir o projeto
+
+1 - abrir terminal -> npm init 
+
+2 - npm instal --save-dev gulp
+
+3 - no package.json -> criar o script "gulp": "gulp",
+
+4 - criar o gulpfile.js
+
+5 - gitignore adicionar o node modules
+
+6 - npm run gulp
+
+7 - instalar o imagemin -> npm install --save-dev gulp-imagemin@7.1.0
+8 - instalar o uglify (minifca js) -> npm install --save-dev gulp-uglify   
