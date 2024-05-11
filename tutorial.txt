@@ -1,0 +1,69 @@
+# com o Npm instalado npm install -g 
+
+1- na pasta do projeto : npm init 
+2- instalar o grunt: npm i --save-dev grunt 
+3- no package.json adicionar ao script o grunt: grunt: "grunt",
+4- criar o arquivo Gruntfile.js
+5- criar a função do grunt no arquivo:
+    - module.exports = function(grunt){
+        grunt.initConfig({
+            pkg: grunt.file.readJSON('package-json'),
+        })
+    }
+
+6- npm run grunt.
+
+-------- Usando grunt para compilar ESS -----
+
+1 - instalar o plugin: npm install --save-dev grunt-contrib-less 
+
+2 - no gruntFile.js carregar o plugin:
+    - grunt.loadNpmTasks('grunt-contrib-less')
+
+3 - escrever uma nova configuração além do pkg
+    less: {
+        development: {
+            files: {
+                'main.css': 'main.less'
+            }
+        }
+    }
+
+4 - criar a tarefa default:
+    grunt.registerTask('default', ['tarefas']);
+
+--------------
+module.exports = function(grunt) {
+    grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
+        less: {
+            development: {
+                files: {
+                    'main.css':'main.less'
+                }
+            }
+        }
+    })
+
+    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.registerTask('default', ['less']);
+}
+
+//----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
+
+compressão do JS por grunt
+
+1 -- instalar o plugin uglify: npm install --save-dev grunt-contrib-uglify 
+
+2 -- carregar o uglify loadNpmTasks
+
+3 -- adicionar o uglify nas config files: arquivo sainda : arquivo entrada
+
+        uglify: {
+            target: {
+                files: {
+                    'dist/scripts/main.min.js': 'src/scripts/main.js'
+                }
+            }
+        }
