@@ -1,0 +1,28 @@
+{
+  "name": "sons-of-anarchy-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp watch",
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrenp2/sons-of-anarchy-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrenp2/sons-of-anarchy-landing-page/issues"
+  },
+  "homepage": "https://github.com/andrenp2/sons-of-anarchy-landing-page#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-watch": "^5.0.1",
+    "sass": "^1.77.4"
+  }
+}

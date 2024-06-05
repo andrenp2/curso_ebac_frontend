@@ -1,0 +1,60 @@
+.temporadas {
+    max-width: 100%;
+    padding: 2vw 5.6vw;
+    background-color: black;
+
+
+    &__titulo {
+        text-align: center;
+        color: #fff;
+        padding-bottom: 54px;
+        padding-top: 48px;
+        font-size: 40px;
+
+        @media (max-width: 768px){
+            font-size: 32px;
+            padding-bottom: 60px;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 32px;
+
+        @media (max-width: 768px){
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            position: relative;
+            img {
+                max-width: 100%;
+                border-radius: 4px;
+            }
+
+            &__legenda {
+                width: 40%;
+                color: #fff;
+                position: absolute;
+                text-align: center;
+                background-color: rgba(0,0,0,0.8);
+                padding: 10px;
+                bottom: 0;
+                left: 0;
+
+                @media (max-width: 768px){
+                    width: 60%;
+                }
+
+                &:hover {
+                    background-color: black;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+
+
+}

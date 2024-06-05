@@ -1,0 +1,48 @@
+@use 'header';
+@use 'hero';
+@use 'sobre';
+@use 'temporadas';
+@use 'footer';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+.texto-principal {
+    color: #f9f9f9;
+}
+
+.texto-secundario {
+    color: silver;
+}
+
+.trailer {
+    display: block;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 48px;
+
+    h1 {
+        font-size: 40px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+
+        @media (max-width: 768px){
+            font-size: 32px;
+            padding-bottom: 12px;
+        }
+    }
+
+    @media (max-width: 768px){
+        iframe {
+            max-width: 100%;
+            padding-top: 0;
+            padding: 16px;
+        }
+    }
+}
